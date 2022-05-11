@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/advanced-graphql-ts/src",
+  "monorepo": true,
+  "root": "apps/advanced-graphql-ts",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/advanced-graphql-ts/tsconfig.app.json"
+  },
+  "projects": {
+    "advanced-graphql-ts": {
+      "type": "application",
+      "root": "apps/advanced-graphql-ts",
+      "entryFile": "main",
+      "sourceRoot": "apps/advanced-graphql-ts/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/advanced-graphql-ts/tsconfig.app.json"
+      }
+    },
+    "accounts": {
+      "type": "application",
+      "root": "apps/accounts",
+      "entryFile": "main",
+      "sourceRoot": "apps/accounts/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/accounts/tsconfig.app.json"
+      }
+    },
+    "profiles": {
+      "type": "application",
+      "root": "apps/profiles",
+      "entryFile": "main",
+      "sourceRoot": "apps/profiles/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/profiles/tsconfig.app.json"
+      }
+    }
+  }
+}
