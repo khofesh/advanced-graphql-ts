@@ -17,6 +17,13 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "paths": {
+      "@app/custom": [
+        "libs/custom/src"
+      ],
+      "@app/custom/*": [
+        "libs/custom/src/*"
+      ]
+    }
   }
 }
